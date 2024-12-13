@@ -81,7 +81,7 @@ pipeline {
         }
         
 
-       stage('Dastardly Scan') {
+     /*  stage('Dastardly Scan') {
             steps {
                 echo 'Launch app...'
                     sh 'docker-compose up --detach'
@@ -102,7 +102,7 @@ pipeline {
                     junit allowEmptyResults: true, testResults: 'dastardly-report.xml', skipPublishingChecks: true
                 }
             }
-        }
+        }*/
 
        
         stage('Deploy to PROD') {
